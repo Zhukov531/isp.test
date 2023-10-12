@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Располагаем блоки вертикально */
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.question,
+.answer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    /* Установим ширину 100% для равных блоков */
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.question {
+    background-color: #e0e0e0;
+}
+
+.answer {
+    background-color: #f0f0f0;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* ------------------------------ */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-image: url("./img/header.png");
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.section img {
+    max-width: 50%;
+}
+
+.section-text {
+    max-width: 45%;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+}
