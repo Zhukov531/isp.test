@@ -148,3 +148,49 @@ function checkAnswer() {
                 document.getElementById('result8').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
             }
         }
+
+// 9
+
+function checkAnswers() {
+            var missingWord1 = document.getElementById('missingWord1').value.toLowerCase();
+            var missingWord2 = document.getElementById('missingWord2').value.toLowerCase();
+
+            if (missingWord1 === 'журнализация' && missingWord2 === 'транзакция') {
+                document.getElementById('result9').innerHTML = 'Верно! Правильные ответы: пропуск1 - Журнализация, пропуск2 - Транзакция.';
+            } else {
+                document.getElementById('result9').innerHTML = 'Один или несколько из ваших ответов неверны. Попробуйте еще раз.';
+            }
+        }
+
+// 10
+
+ function checkAnswer() {
+            var selectedAnswer = document.getElementById('answerSelect').value;
+
+            if (selectedAnswer === 'utilit') {
+                document.getElementById('result10').innerHTML = 'Верно! Правильный ответ: утилит.';
+            } else {
+                document.getElementById('result10').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
+            }
+        }
+
+// 11
+
+function checkAnswer() {
+            var missingWord = document.getElementById('missingWord').textContent.toLowerCase();
+            var userAnswer = document.getElementById('userAnswer').value.toLowerCase();
+
+            if (userAnswer === missingWord) {
+                document.getElementById('result11').innerHTML = 'Верно! Правильный ответ: ' + missingWord + '.';
+            } else {
+                document.getElementById('result11').innerHTML = 'Неправильный ответ.';
+            }
+        }
+
+        // Устанавливаем правильное слово после загрузки страницы
+        window.onload = function() {
+            document.getElementById('missingWord').textContent = 'целостность';
+        }
+
+// 12
+
