@@ -105,3 +105,46 @@ function checkAnswers() {
                 document.getElementById('result').innerHTML = 'Один или оба из ваших ответов неверны. Попробуйте еще раз.';
             }
         }
+
+// 6
+function checkAnswer() {
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+
+            if (selectedAnswer) {
+                var userAnswer = selectedAnswer.value;
+                if (userAnswer === 'A') {
+                    document.getElementById('result6').innerHTML = 'Верно! Ответ A) централизованное хранение метаданных правильный.';
+                } else {
+                    document.getElementById('result6').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
+                }
+            } else {
+                document.getElementById('result6').innerHTML = 'Выберите один из вариантов ответа.';
+            }
+        }
+
+// 7
+
+
+function checkAnswers() {
+            var selectUser1 = document.getElementById('selectUser1').value;
+            var selectUser2 = document.getElementById('selectUser2').value;
+            var selectUser3 = document.getElementById('selectUser3').value;
+
+            if (selectUser1 === 'roleB' && selectUser2 === 'roleA' && selectUser3 === 'roleC') {
+                document.getElementById('result7').innerHTML = 'Верно! Правильные ответы: 1 - B, 2 - A, 3 - C';
+            } else {
+                document.getElementById('result7').innerHTML = 'Один или несколько из ваших ответов неверны. Попробуйте еще раз.';
+            }
+        }
+
+// 8
+
+function checkAnswer() {
+            var missingWord = document.getElementById('missingWord').value;
+
+            if (missingWord.toLowerCase() === 'субд') {
+                document.getElementById('result8').innerHTML = 'Верно! Правильный ответ: СУБД.';
+            } else {
+                document.getElementById('result8').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
+            }
+        }
