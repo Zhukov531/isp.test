@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="fsec">
+    <h1 class="headerh1">Тест:</h1>
     <div class="container">
         <div class="question" id="question1">Информация</div>
         <div class="answer" id="answer1">Это описание некоторой сущности предметной области — объекта, процесса, явления или события, существующих или
@@ -23,7 +25,74 @@
         <div class="answer" id="answer4">Совокупность технических и программных средств, обеспечивающая сбор, хранение, обработку, поиск и выдачу информации в
         задачах любой области</div>
     </div>
-    <p id="result"></p>
+    <p id="result1"></p>
+    </div>
+    <!-- Вопрос 2 -->
+
+    <div class="section2">
+        <p>
+            <input type="text" id="word1" placeholder="Введите слово"> - это именованная совокупность взаимосвязанных данных,
+            отображающая состояние объектов и их отношений в некоторой предметной области, используемых несколькими
+            пользователями.
+        </p>
+        <p>
+            Данные отличаются от
+            <input type="text" id="word2" placeholder="Введите слово"> тем, что
+            <input type="text" id="word3" placeholder="Введите слово"> всегда информативны.
+        </p>
+        <button onclick="checkWords()">Проверить</button>
+        <p id="result2"></p>
+    </div>
+
+    <!-- 3 ВОПРОС -->
+    <div class="sec3">
+        <p>СУБД предназначена для:</p>
+        <form id="quizForm">
+            <input type="radio" name="answer" value="A"> своевременной выдачи достоверной информации<br>
+            <input type="radio" name="answer" value="B"> осуществления преобразований массивов данных<br>
+            <input type="radio" name="answer" value="C"> организации, контроля и администрирования базы данных<br>
+            <button type="button" onclick="checkAnswer()">Проверить</button>
+        </form>
+        <p id="result3"></p>
+    </div>
+
+    <!-- ВОПРОС 4 -->
+    <div class="sec4">
+        <p>Прикладные программы взаимодействуют с базой данных при помощи:</p>
+        <form id="quizForm">
+            <input type="radio" name="answer" value="A"> СОД<br>
+            <input type="radio" name="answer" value="B"> СУБД<br>
+            <input type="radio" name="answer" value="C"> СД<br>
+            <button type="button" onclick="checkAnswer()">Проверить</button>
+        </form>
+        <p id="result4"></p>
+    </div>
+    <!-- ВОПРОС 5 -->
+
+
+    <div class="sec5">
+        <p>Заголовок: Отличие БнД от БД (расшифруйте аббревиатуры и вставьте в пропуски)</p>
+        <p>
+            <select id="select1">
+                <option value="">Выберите ответ для пропуска 1</option>
+                <option value="Банк данных">Банк данных</option>
+                <option value="База данных">База данных</option>
+                <option value="Бухгалтерия и документация">Бухгалтерия и документация</option>
+            </select>
+            можно использовать для извлечения и анализа информации. Тем временем
+            <select id="select2">
+                <option value="">Выберите ответ для пропуска 2</option>
+                <option value="Банк данных">Банк данных</option>
+                <option value="База данных">База данных</option>
+                <option value="Бухгалтерия и документация">Бухгалтерия и документация</option>
+            </select>
+            собирает, управляет и хранит информацию.
+        </p>
+        <button type="button" onclick="checkAnswers()">Проверить</button>
+        <p id="result"></p>
+    </div>
+
+
     <script src="./js/script.js"></script>
 </body>
 

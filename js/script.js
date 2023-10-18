@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll('.question');
     const answers = document.querySelectorAll('.answer');
-    const result = document.getElementById('result');
+    const result1 = document.getElementById('result1');
 
     answers.forEach(function(answer) {
         answer.draggable = true;
@@ -40,8 +40,68 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (correctCount === answers.length) {
-            result.textContent = 'Совмещено правильно!';
-            result.style.color = 'green';
+            result1.textContent = 'Совмещено правильно!';
+            result1.style.color = 'green';
         }
     }
 });
+
+// 2
+function checkWords() {
+            var word1 = document.getElementById('word1').value;
+            var word2 = document.getElementById('word2').value;
+            var word3 = document.getElementById('word3').value;
+
+            if (word1.toLowerCase() === 'база данных' && word2.toLowerCase() === 'метаданных' && word3.toLowerCase() === 'данные') {
+                document.getElementById('result2').innerHTML = 'Верно! Все ваши ответы правильные.';
+            } else {
+                document.getElementById('result2').innerHTML = 'Один или несколько из ваших ответов неверны. Попробуйте еще раз.';
+            }
+        }
+// 3
+function checkAnswer() {
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer) {
+                var userAnswer = selectedAnswer.value;
+                if (userAnswer === 'C') {
+                    document.getElementById('result3').innerHTML = 'Верно! Ответ C) организация, контроль и администрирование базы данных правильный.';
+                } else {
+                    document.getElementById('result3').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
+                }
+            } else {
+                document.getElementById('result3').innerHTML = 'Выберите один из вариантов ответа.';
+            }
+        }
+
+// 4
+
+function checkAnswer() {
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer) {
+                var userAnswer = selectedAnswer.value;
+                if (userAnswer === 'B') {
+                    document.getElementById('result4').innerHTML = 'Верно! Ответ правильный.';
+                } else {
+                    document.getElementById('result4').innerHTML = 'Неправильный ответ. Попробуйте еще раз.';
+                }
+            } else {
+                document.getElementById('result4').innerHTML = 'Выберите один из вариантов ответа.';
+            }
+        }
+
+
+// 5
+
+function checkAnswers() {
+            var selectedOption1 = document.getElementById('select1');
+            var selectedOption2 = document.getElementById('select2');
+
+            var correctOption1 = 'Банк данных';
+            var correctOption2 = 'База данных';
+
+            if (selectedOption1.value === correctOption1 && selectedOption2.value === correctOption2) {
+                document.getElementById('result').innerHTML = 'Верно! "' + correctOption1 + '" можно использовать для извлечения и анализа информации. Тем временем "' + correctOption2 + '" собирает, управляет и хранит информацию.';
+            } else {
+                document.getElementById('result').innerHTML = 'Один или оба из ваших ответов неверны. Попробуйте еще раз.';
+            }
+        }
